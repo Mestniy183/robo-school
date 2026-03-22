@@ -1,0 +1,36 @@
+.hero {
+    background-image: url('../../images/hero/girl.png');
+    background-repeat: no-repeat;
+    background-position: 81% 100%;
+}
+
+.hero__wrapper {
+    padding: 266px 0 411px;
+}
+
+.hero__title {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 160%;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #fff;
+    margin-bottom: 50px;
+    max-width: 478px;
+}
+
+.hero__btn {
+    border-radius: 5px;
+    padding: 25px 54px;
+    background: #d52027;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #fff;
+}
