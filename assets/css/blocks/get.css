@@ -1,0 +1,32 @@
+.get {
+    background: #f9f9f9;
+    padding: 100px 0;
+}
+.get__title {
+    font-weight: 600;
+font-size: 50px;
+line-height: 160%;
+color: #141024;
+margin-bottom: 60px;
+}
+.get__items {
+    display: flex;
+    gap: 40px;
+}
+.get__item {
+    flex: 1;
+}
+.get__label {
+    font-weight: 600;
+font-size: 24px;
+line-height: 160%;
+color: #141024;
+margin-bottom: 20px;
+}
+.get__text {
+    font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+color: rgba(20, 16, 36, 0.7);
+text-wrap: balance;
+}
