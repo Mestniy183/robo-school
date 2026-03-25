@@ -5,4 +5,6 @@
 @import './blocks/header.css';
 @import './blocks/hero.css';
 @import './blocks/about.css';
-@import './blocks/get.css'
+@import './blocks/get.css';
+@import './blocks/trainers.css';
+@import 'blocks/package.css';
