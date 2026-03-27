@@ -1,0 +1,64 @@
+.enroll {
+    background-color: #d52027;
+    background-image: url('../../images/enroll/percent-bg.png');
+    padding: 87px 0;
+    background-position: left bottom;
+}
+
+.enroll__container {
+    max-width: 1240px;
+}
+
+.enroll__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.enroll__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    color: #fff;
+    margin-bottom: 20px;
+    max-width: 476px;
+    text-wrap: balance;
+    margin-top: 19px;
+}
+
+.enroll__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #fff;
+}
+
+.enroll__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    flex: 1;
+    gap: 10px;
+}
+
+.enroll__input {
+    border: none;
+    border-radius: 5px;
+    background: #f6f6f6;
+    padding: 23px 20px;
+}
+
+.enroll__btn {
+    border-radius: 5px;
+    background: #141024;
+    padding: 23px 20px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.enroll__input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(40, 41, 68, 0.7);
+}
