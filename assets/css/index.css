@@ -1,6 +1,5 @@
 @import './normalize.css';
 @import './fonts.css';
-@import './variables.css';
 @import './base.css';
 @import './blocks/header.css';
 @import './blocks/hero.css';
@@ -9,3 +8,4 @@
 @import './blocks/trainers.css';
 @import 'blocks/package.css';
 @import 'blocks/enroll.css';
+@import 'blocks/footer.css';

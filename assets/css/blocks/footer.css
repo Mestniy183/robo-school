@@ -1,0 +1,36 @@
+.footer {
+    background: #141024;
+    padding: 40px 0 71px;
+}
+
+.footer__container {
+    max-width: 1920px;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 160%;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.footer__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.footer__tel {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 160%;
+    color: #fff;
+}

@@ -20,9 +20,6 @@
     display: block;
 }
 
-.header__nav {
-}
-
 .header__items {
     display: flex;
     gap: 40px;
@@ -35,8 +32,6 @@
     text-align: center;
     color: #fff;
 }
-
-.header__link {}
 
 .header__phone {
     font-weight: 600;
