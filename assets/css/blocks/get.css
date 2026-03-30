@@ -27,6 +27,8 @@
     line-height: 160%;
     color: #141024;
     margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
 }
 
 .get__text {

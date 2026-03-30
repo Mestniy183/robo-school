@@ -40,3 +40,18 @@
     text-align: right;
     color: #fff;
 }
+
+@media(max-width:1024px) {
+    .header__phone {
+        display: none;
+    }
+
+    .header__items {
+        display: none;
+    }
+
+    .header__call {
+        
+    }
+
+}

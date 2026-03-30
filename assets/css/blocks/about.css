@@ -26,7 +26,7 @@
 
 .about__title {
     font-weight: 600;
-    font-size: 70px;
+    font-size: clamp(3.75rem, 3.0357rem + 1.1161vw, 4.375rem);
     line-height: 160%;
     color: #d52027;
 }
@@ -36,4 +36,15 @@
     font-size: 18px;
     line-height: 160%;
     color: rgba(20, 16, 36, 0.7);
+}
+
+@media(max-width:1024px) {
+    .about__items {
+        flex-direction: column;
+       align-items: center;
+    }
+
+    .about__title {
+        text-align: center;
+    }
 }
