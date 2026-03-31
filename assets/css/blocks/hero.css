@@ -6,9 +6,8 @@
 }
 
 .hero__wrapper {
-    padding: clamp(2.9375rem, 0.2rem + 13.6875vw, 16.625rem) 0 clamp(2.5rem, -2.1375rem + 23.1875vw, 25.6875rem);
+    padding: clamp(2.9375rem, -12.7054rem + 24.442vw, 16.625rem) 0 clamp(2.5rem, -24rem + 41.4063vw, 25.6875rem);
 }
-
 
 .hero__title {
     font-weight: 600;
@@ -32,7 +31,27 @@
     padding: 25px 54px;
     background: #d52027;
     font-weight: 400;
-    font-size: 18px;
+    font-size: clamp(1rem, 0.8571rem + 0.2232vw, 1.125rem);
     line-height: 160%;
     color: #fff;
+}
+
+@media(max-width:1024px) {
+    .hero {
+        background-image: url('../../images/hero/girl-mobile.png');
+        background-size: 273px 320px;
+        background-position: center bottom 40px;
+    }
+    .hero__wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hero__text {
+        text-align: center;
+        margin-bottom: 280px;
+    }
+    .hero__btn {
+        padding: 17px 82px;
+    }
 }
