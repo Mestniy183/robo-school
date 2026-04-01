@@ -95,3 +95,9 @@ button {
 .tooltip:hover .tooltip__text {
     visibility: visible;
 }
+
+@media(max-width:1024px) {
+    .tooltip:hover .tooltip__text {
+      transform: translateX(-70%);
+    }
+}
