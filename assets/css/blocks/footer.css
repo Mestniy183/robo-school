@@ -1,6 +1,6 @@
 .footer {
     background: #141024;
-    padding: 40px 0 71px;
+    padding: 40px 0 clamp(1.25rem, 0.6125rem + 3.1875vw, 4.4375rem);
 }
 
 .footer__container {
@@ -14,7 +14,7 @@
 
 .footer__title {
     font-weight: 700;
-    font-size: 30px;
+    font-size: clamp(1.125rem, 0.975rem + 0.75vw, 1.875rem);
     line-height: 160%;
     color: #fff;
     margin-bottom: 5px;
@@ -22,7 +22,7 @@
 
 .footer__text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
     line-height: 160%;
     color: rgba(255, 255, 255, 0.7);
 
@@ -30,7 +30,29 @@
 
 .footer__tel {
     font-weight: 600;
-    font-size: 30px;
+    font-size: clamp(1rem, 0.825rem + 0.875vw, 1.875rem);
     line-height: 160%;
     color: #fff;
+}
+.footer__tel--mobile {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .footer__wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__tel--mobile {
+        display: block;
+    }
+    .footer__tel:not(.footer__tel--mobile) {
+        display: none;
+    }
+    .footer__title {
+        margin-bottom: 20px;
+    }
+    .footer__tel--mobile {
+        margin-bottom: 40px;
+    }
 }

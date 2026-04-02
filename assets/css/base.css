@@ -95,9 +95,16 @@ button {
 .tooltip:hover .tooltip__text {
     visibility: visible;
 }
+.site-title {
+    font-size: clamp(1.875rem, 1.625rem + 1.25vw, 3.125rem);
+    margin-bottom: clamp(2.5rem, 2.25rem + 1.25vw, 3.75rem);
+}
 
 @media(max-width:1024px) {
     .tooltip:hover .tooltip__text {
-      transform: translateX(-70%);
+      right: -15px;
+    }
+    .site-title {
+        text-align: center;
     }
 }
