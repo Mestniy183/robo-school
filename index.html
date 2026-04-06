@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robo School</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 
@@ -17,9 +18,9 @@
                     <a class="header__logo" href="#">ROBO.SCHOOL
                     </a>
                     <nav class="header__nav">
-                        <a class="header__call" href="tel:+78000001122">                         
-                        </a> 
-                        <button class="header__burger"></button> 
+                        <a class="header__call" href="tel:+78000001122">
+                        </a>
+                        <button class="header__burger"></button>
                         <ul class="header__items">
                             <li class="header__item">
                                 <a class="header__link" href="#">О школе</a>
@@ -105,7 +106,7 @@
                         </p>
                     </li>
                     <li class="get__item">
-                        <h3 class="get__label">
+                        <h3 class="get__label get__label--pl">
                             Практику
                             <div class="tooltip">
                                 <div class="tooltip__element">
@@ -136,33 +137,64 @@
         <section class="trainers">
             <div class="container">
                 <h2 class="trainers__title site-title">Профессиональные тренеры</h2>
-                <ul class="trainers__items">
-                    <li class="trainers__item">
-                        <img class="trainers__img" src="assets/images/trainers/trainer-1.jpg" alt="Ирина Лайм">
-                        <h3 class="trainers__name">Ирина Лайм</h3>
-                        <p class="trainers__text">
-                            преподаватель по робототехнике
+                <div class="swiper">
+                    <ul class="trainers__items swiper-wrapper">
+                        <li class="trainers__item swiper-slide">
+                            <picture>
+                                <source media="(max-width: 576px)" srcset="assets/images/trainers/mobile/trainer-1.png">
+                                <img class="trainers__img" src="assets/images/trainers/trainer-1.jpg" alt="Ирина Лайм">
+                            </picture>
+                            <h3 class="trainers__name">Ирина Лайм</h3>
+                            <p class="trainers__text">
+                                преподаватель по робототехнике
 
-                        </p>
-                        <a class="trainers__link" href="#">Подробнее</a>
-                    </li>
-                    <li class="trainers__item">
-                        <img class="trainers__img" src="assets/images/trainers/trainer-2.jpg" alt="Марина Орлова">
-                        <h3 class="trainers__name">Марина Орлова</h3>
-                        <p class="trainers__text">
-                            преподаватель по робототехнике
-                        </p>
-                        <a class="trainers__link" href="#">Подробнее</a>
-                    </li>
-                    <li class="trainers__item">
-                        <img class="trainers__img" src="assets/images/trainers/trainer-3.jpg" alt="Максим Петров">
-                        <h3 class="trainers__name">Максим Петров</h3>
-                        <p class="trainers__text">
-                            преподаватель по прграмированнию
-                        </p>
-                        <a class="trainers__link" href="#">Подробнее</a>
-                    </li>
-                </ul>
+                            </p>
+                            <a class="trainers__link" href="#">Подробнее</a>
+                        </li>
+                        <li class="trainers__item swiper-slide">
+                            <picture>
+                                <source media="(max-width: 576px)" srcset="assets/images/trainers/mobile/trainer-2.png">
+                                <img class="trainers__img" src="assets/images/trainers/trainer-2.jpg"
+                                    alt="Марина Орлова">
+                            </picture>
+                            <h3 class="trainers__name">Марина Орлова</h3>
+                            <p class="trainers__text">
+                                преподаватель по робототехнике
+                            </p>
+                            <a class="trainers__link" href="#">Подробнее</a>
+                        </li>
+                        <li class="trainers__item swiper-slide">
+                            <img class="trainers__img" src="assets/images/trainers/trainer-3.jpg" alt="Максим Петров">
+                            <h3 class="trainers__name">Максим Петров</h3>
+                            <p class="trainers__text">
+                                преподаватель по прграмированнию
+                            </p>
+                            <a class="trainers__link" href="#">Подробнее</a>
+                        </li>
+
+                        <li class="trainers__item swiper-slide">
+                            <img class="trainers__img" src="assets/images/trainers/trainer-4.jpg" alt="Максим Петров">
+                            <h3 class="trainers__name">Константин Назаров</h3>
+                            <p class="trainers__text">
+                                преподаватель по робототехнике
+                            </p>
+                            <a class="trainers__link" href="#">Подробнее</a>
+                        </li>
+
+                        <li class="trainers__item swiper-slide">
+                            <img class="trainers__img" src="assets/images/trainers/trainer-5.jpg" alt="Максим Петров">
+                            <h3 class="trainers__name">Лиза Весенняя</h3>
+                            <p class="trainers__text">
+                                преподаватель по прграмированнию
+                            </p>
+                            <a class="trainers__link" href="#">Подробнее</a>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </section>
 
@@ -239,6 +271,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

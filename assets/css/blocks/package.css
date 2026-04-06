@@ -1,10 +1,9 @@
 .package {
-    padding: 60px 0 120px;
+    padding: clamp(1.875rem, 1.5rem + 1.875vw, 3.75rem) 0 clamp(3.75rem, 3rem + 3.75vw, 7.5rem);
 }
 
 .package__title {
     font-weight: 600;
-    line-height: 160%;
     color: #141024;
 }
 
@@ -16,7 +15,7 @@
 .package__item {
     border: 1px solid rgba(20, 16, 36, 0.2);
     border-radius: 20px;
-    padding: 40px;
+    padding: 40px clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -62,7 +61,7 @@
 
 .package__btn {
     border-radius: 5px;
-    padding: clamp(1.0625rem, 0.4911rem + 0.8929vw, 1.5625rem) 54px;
+    padding: clamp(1.0625rem, 0.4911rem + 0.8929vw, 1.5625rem) 52px;
     background: #d52027;
     font-weight: 400;
     font-size: clamp(1rem, 0.8571rem + 0.2232vw, 1.125rem);

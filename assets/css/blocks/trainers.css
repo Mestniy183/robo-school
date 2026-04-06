@@ -1,17 +1,30 @@
 .trainers {
-    padding: 120px 0 60px;
+    padding: clamp(3.75rem, 3rem + 3.75vw, 7.5rem) 0 clamp(1.875rem, 1.5rem + 1.875vw, 3.75rem);
 }
 
 .trainers__title {
     border-radius: 20px;
     font-weight: 600;
-    line-height: 160%;
     color: #141024;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-pagination {
+    position: static;
+     width: 260px !important;
+}
+
+
+.swiper-pagination-progressbar-fill {
+    background: #141024 !important;
 }
 
 .trainers__items {
     display: flex;
-    gap: 40px;
 }
 
 .trainers__img {
@@ -29,14 +42,14 @@
 .trainers__text {
     margin-bottom: 20px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
     line-height: 160%;
     color: rgba(20, 16, 36, 0.7);
 }
 
 .trainers__link {
     font-weight: 400;
-    font-size: 18px;
+    font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
     line-height: 160%;
     color: #d52027;
 }

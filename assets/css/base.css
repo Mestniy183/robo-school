@@ -63,7 +63,7 @@ button {
 .container {
     max-width: 1360px;
     margin: 0 auto;
-    padding: 0 100px;
+    padding: 0 clamp(0.625rem, -0.5rem + 5.625vw, 6.25rem);
 }
 
 .page-wrapper {
@@ -76,7 +76,7 @@ button {
 
 .tooltip__text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
     line-height: 160%;
     text-align: center;
     color: #141024;
@@ -96,15 +96,17 @@ button {
     visibility: visible;
 }
 .site-title {
+    line-height: 160%;
     font-size: clamp(1.875rem, 1.625rem + 1.25vw, 3.125rem);
     margin-bottom: clamp(2.5rem, 2.25rem + 1.25vw, 3.75rem);
 }
 
 @media(max-width:1024px) {
     .tooltip:hover .tooltip__text {
-      right: -15px;
+      right: -30px;
     }
     .site-title {
         text-align: center;
+        line-height: 140%;
     }
 }

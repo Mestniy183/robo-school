@@ -1,18 +1,17 @@
 .get {
     background: #f9f9f9;
-    padding: 100px 0;
+    padding: clamp(2.5rem, 1.75rem + 3.75vw, 6.25rem) 0 clamp(3.25rem, 2.65rem + 3vw, 6.25rem);
 
 }
 
 .get__title {
     font-weight: 600;
-    line-height: 160%;
     color: #141024;
 }
 
 .get__items {
     display: flex;
-    gap: 40px;
+    gap: clamp(1.875rem, 1.75rem + 0.625vw, 2.5rem);
 }
 
 .get__item {
@@ -21,17 +20,17 @@
 
 .get__label {
     font-weight: 600;
-    font-size: 24px;
+    font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
     line-height: 160%;
     color: #141024;
-    margin-bottom: 20px;
+    margin-bottom: clamp(0.625rem, 0.5rem + 0.625vw, 1.25rem);
     display: flex;
     gap: 10px;
 }
 
 .get__text {
     font-weight: 400;
-    font-size: 18px;
+    font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
     line-height: 160%;
     color: rgba(20, 16, 36, 0.7);
     text-wrap: balance;
@@ -48,5 +47,9 @@
     }
     .get__text {
         text-align: center;
+    }
+    .get__label--pl {
+        gap: 14px;
+        padding-left: 39px;
     }
 }

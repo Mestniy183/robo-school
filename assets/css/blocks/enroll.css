@@ -77,4 +77,7 @@
     .enroll__title {
         max-width: none;
     }
+    .enroll {
+        background-image: none;
+    }
 }

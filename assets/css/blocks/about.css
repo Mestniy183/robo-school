@@ -1,9 +1,9 @@
 .about {
-    padding: 120px 0;
+    padding: clamp(3.75rem, 3rem + 3.75vw, 7.5rem) 0;
 }
 
 .about__text {
-    margin-bottom: 60px;
+    margin-bottom: clamp(2.5rem, 2.25rem + 1.25vw, 3.75rem);
     font-weight: 400;
     font-size: clamp(1.25rem, 1.125rem + 0.625vw, 1.875rem);
     line-height: 160%;
@@ -17,7 +17,7 @@
 
 .about__items {
     display: flex;
-    gap: 40px;
+    gap: clamp(1.5rem, 1.3rem + 1vw, 2.5rem);
 }
 
 .about__item {
@@ -33,7 +33,7 @@
 
 .about__descr {
     font-weight: 400;
-    font-size: 18px;
+    font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
     line-height: 160%;
     color: rgba(20, 16, 36, 0.7);
 }
@@ -46,5 +46,17 @@
 
     .about__title {
         text-align: center;
+    }
+    .about__descr {
+        text-align: center;
+    }
+}
+
+@media(max-width: 576px) {
+    .about__title {
+        margin-bottom: -3px;
+    }
+    .about__descr {
+        max-width: 270px;
     }
 }
