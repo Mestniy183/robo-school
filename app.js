@@ -4,10 +4,17 @@ var swiper = new Swiper(".swiper", {
       type: "progressbar",
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-custom-next",
+      prevEl: ".swiper-button-custom-prev",
     },
-    slidesPerView: 3,
-    spaceBetween: 40,
+    slidesPerView: 'auto',
     loop: true,
+    breakpoints: {
+        320: {
+            spaceBetween: 20
+        },
+        576: {
+            spaceBetween: 40
+        }
+    }
   });
