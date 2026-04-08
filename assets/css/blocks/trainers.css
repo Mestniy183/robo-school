@@ -31,9 +31,13 @@
     display: flex;
 }
 
+.swiper-free-mode>.swiper-wrapper {
+    margin: 0 auto clamp(2.5rem, 2.3rem + 1vw, 3.5rem);
+    transition-timing-function: ease-out;
+}
+
 .trainers__items {
     display: flex;
-    margin-bottom: 56px;
 }
 
 .trainers-navigation {

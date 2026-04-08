@@ -45,7 +45,23 @@
     }
 
     .header__items {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        background: #141024;
+        width: 100%;
+        height: calc(100dvh - 64px);
+        top: 64px;
+        justify-content: center;
         display: none;
+    }
+
+    .header__items.open {
+        display: flex;
+    }
+
+    .header__link {
+        font-size: 30px;
     }
 
     .header__call {
@@ -62,6 +78,10 @@
         background-image: url('../../images/header/burger.svg');
         border-radius: 10px;
         display: block;
+    }
+
+    .header__burger.open {
+        background-image: url('../../images/header/burger-cross.svg');
     }
     .header__nav {
         display: flex;
