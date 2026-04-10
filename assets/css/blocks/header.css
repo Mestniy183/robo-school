@@ -53,11 +53,16 @@
         height: calc(100dvh - 64px);
         top: 64px;
         justify-content: center;
-        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.8s;
+        transform: translateY(100%);
     }
 
     .header__items.open {
-        display: flex;
+       opacity: 1;
+       visibility: visible;
+       transform: translateY(0);
     }
 
     .header__link {
